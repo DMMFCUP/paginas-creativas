@@ -2,97 +2,142 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Belleza y Chismes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temas Interesantes</title>
     <style>
+        /* Estilos generales */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background-color: #fff5f5;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            animation: backgroundChange 20s infinite;
         }
-        
-        section {
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        h1 {
-            color: #ff66b2;
+        header {
+            background: linear-gradient(135deg, #ff6f61, #ff9478);
+            color: white;
+            padding: 2rem;
             text-align: center;
-            font-size: 2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        /* Estilos de las secciones */
+        section {
+            padding: 2rem;
+            margin: 2rem auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
         h2 {
-            color: #ff1a75;
-            border-bottom: 2px solid #ffcce6;
-            padding-bottom: 10px;
+            color: #ff6f61;
+            font-size: 2rem;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
-        
-        img {
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        /* Estilos de los videos */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
             max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
+            background: #000;
+            margin-bottom: 1rem;
+            border-radius: 10px;
         }
-        
-        .tip {
-            background-color: #ffebf2;
-            padding: 15px;
-            border-left: 4px solid #ff66b2;
-            margin: 10px 0;
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* Estilos de los botones */
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            background-color: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff9478;
+        }
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes backgroundChange {
+            0% { background-color: rgb(240, 240, 240); }
+            25% { background-color: rgb(220, 220, 255); }
+            50% { background-color: rgb(240, 220, 240); }
+            75% { background-color: rgb(220, 240, 220); }
+            100% { background-color: rgb(240, 240, 240); }
         }
     </style>
 </head>
 <body>
-    <section id="belleza">
-        <h1>Belleza y Cuidado Personal</h1>
-        <h2>¿Por qué es importante desmaquillarse?</h2>
-        <div class="tip">
-            <p>Desmaquillarse antes de dormir es uno de los hábitos más importantes para mantener una piel saludable. No hacerlo puede causar:</p>
-            <ul>
-                <li>Obstrucción de poros y acné</li>
-                <li>Envejecimiento prematuro</li>
-                <li>Pestañas quebradizas</li>
-                <li>Irritación ocular</li>
-            </ul>
+    <header>
+        <h1>Temas Interesantes</h1>
+    </header>
+
+    <section id="cuidado-personal">
+        <h2>Importancia de Desmaquillarse y Beneficios de las Trenzas Coreanas</h2>
+        <p>Desmaquillarse antes de dormir es un paso fundamental en la rutina de cuidado facial. Al eliminar el maquillaje, permites que la piel respire, previniendo la obstrucción de poros que puede conducir a imperfecciones como el acné y puntos negros. Además, una piel limpia absorbe mejor los productos hidratantes y tratamientos nocturnos, optimizando su eficacia.</p>
+        <p>Las trenzas coreanas, conocidas por su elegancia y simplicidad, no solo aportan un estilo distintivo, sino que también ofrecen beneficios para la salud capilar. Al trenzar el cabello, se reduce la exposición a factores ambientales dañinos y se minimiza el daño por fricción durante el sueño. Este peinado protege las hebras capilares, contribuyendo a un cabello más fuerte y con mayor vitalidad.</p>
+        <div class="video-container">
+            <iframe src="https://youtube.com/shorts/jrGPls3QmZs?si=hl8Asj7zQjE7fa8O" frameborder="0" allowfullscreen></iframe>
         </div>
-        
-        <h2>Trenzas Coreanas: El secreto para un cabello hermoso</h2>
-        <p>Las trenzas coreanas se han convertido en una tendencia no solo por su estética, sino por sus beneficios:</p>
-        <ul>
-            <li>Protegen el cabello durante el sueño</li>
-            <li>Reducen el frizz</li>
-            <li>Crean ondas naturales sin calor</li>
-            <li>Previenen la rotura del cabello</li>
-        </ul>
+        <a href="https://youtube.com/shorts/jrGPls3QmZs?si=hl8Asj7zQjE7fa8O" class="btn" target="_blank">Ver Tutorial de Trenzas Coreanas</a>
     </section>
 
     <section id="chismes">
-        <h1>¡Los Mejores Chismes!</h1>
-        <div class="tip">
-            <p>¡Esta sección está dedicada a mantenerte al día con las últimas noticias del espectáculo!</p>
-            <p>Recuerda: los chismes son más divertidos cuando se comparten con responsabilidad.</p>
+        <h2>Zona de Chismes</h2>
+        <p>Los chismes han sido una forma tradicional de comunicación social, permitiendo la difusión de información, ya sea verificada o no, sobre la vida de terceros. Aunque a menudo se consideran inofensivos, es importante ser conscientes del impacto que pueden tener en las personas involucradas. La propagación de rumores puede afectar la reputación y el bienestar emocional de los individuos.</p>
+        <p>En la era digital, los chismes se propagan más rápidamente a través de las redes sociales, alcanzando a una audiencia más amplia en cuestión de segundos. Esta velocidad de difusión amplifica tanto su atractivo como su potencial daño. Por ello, es esencial ejercer responsabilidad y empatía al compartir información sobre los demás.</p>
+        <div class="video-container">
+            <iframe src="https://youtu.be/9NBgSpUFd4Q?si=-eNP_fO5zmsqxVYu" frameborder="0" allowfullscreen></iframe>
         </div>
-        <img src="/api/placeholder/400/200" alt="Imagen representativa de chismes">
+        <a href="https://youtu.be/9NBgSpUFd4Q?si=-eNP_fO5zmsqxVYu" class="btn" target="_blank">Aprende más sobre la Ética de los Chismes</a>
     </section>
 
     <section id="panini">
-        <h1>La Nueva Generación Musical</h1>
-        <h2>Ángela Aguilar: Siguiendo los Pasos de Panini</h2>
-        <p>Ángela Aguilar, la joven promesa de la música mexicana, ha demostrado seguir la inspiradora trayectoria de grandes artistas como Panini:</p>
-        <div class="tip">
-            <ul>
-                <li>Talento desde temprana edad</li>
-                <li>Dedicación a su carrera musical</li>
-                <li>Respeto por las tradiciones musicales</li>
-                <li>Conexión especial con su público</li>
-            </ul>
-        </div>
-        <p>La nueva generación de artistas demuestra que el talento no tiene edad, manteniendo viva la música tradicional con un toque moderno.</p>
+        <h2>La Panini: Controversias y Rumores</h2>
     </section>
-</body>
-</html>
+ 
